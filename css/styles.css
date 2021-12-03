@@ -1,0 +1,131 @@
+body {
+  font-family: "Koh Santepheap", cursive;
+  font-size: 24px;
+  background-color: #d4ebeda4;
+  color: black;
+}
+input,
+select {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  padding: 5px;
+  color: rgb(80, 79, 79);
+  font-size: large;
+}
+button {
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 0.5em;
+  color: white;
+  border-color: transparent;
+  border-radius: 4px;
+}
+p {
+  font-size: 48px;
+}
+span {
+  font-size: 24px;
+}
+.div-principal {
+  position: relative;
+}
+.titulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.abm {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 35%;
+  right: 35%;
+  visibility: hidden;
+  z-index: 5;
+  top: 0%;
+  background-color: lightblue;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.inpts {
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.derecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 1em;
+}
+.izquierda {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: -1.4em;
+}
+.Clean {
+  margin-left: 8%;
+  
+}
+#Open{
+    margin-left: 5%
+}
+.Clean, #Open,
+.Add {
+  background-color: #0985e3e3;
+}
+.Clean:hover,
+.Add:hover, #Open:hover{
+  background-color: #0a69b1e3;
+}
+.Delete {
+    margin-top: -2.3%;
+  background-color: #d63031;
+}
+.Delete:hover {
+  background-color: #b11f1f;
+}
+.calc {
+  background-color: #079d9a;
+}
+.calc:hover {
+  background-color: #09706f;
+}
+.filtros {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  top: 0%;
+  z-index: 1;
+}
+.campos,
+.tabla {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.table {
+  width: 100%;
+  height: auto;
+  background-color: #89cbd19f;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+tr,
+td {
+  padding: 0.5em;
+  text-align: center;
+}
+
+#table tr > *:nth-child(5) {
+  display: none;
+}

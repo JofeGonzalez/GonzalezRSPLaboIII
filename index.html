@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Segundo Parcial</title>
+  </head>
+  <body>
+    <div class="div-principal">
+
+      <div class="filtros">
+        <div class="titulo">
+          <h1>Filtros</h1>
+        </div>
+        <label for="SexoClienteFiltro">Filtrar Por: </label>
+        <select name="SexoClienteFiltro" id="SexoClienteFiltro">
+          <option value="10000">>10000</option>
+          <option value="20000">>20000</option>
+          <option value="30000">>30000</option>
+        </select>
+        <label for="Prom">Promedio de Edad: </label>
+        <input type="text" name="Prom" id="Prom" disabled />
+        <button class="calc" id="calc">Calcular Promedio</button>
+      </div>
+      <button onclick="App.OpenABM()" id="Open">Agregar Vehiculo</button>
+      <div class="campos">
+        <p>Campos Mostrados <span>Tildar los campos a mostrar</span></p>
+        <input
+          type="checkbox"
+          checked="true"
+          onchange="App.showFields(0)"
+          name="Id"
+          id="Id"
+        />
+        Id
+        <input
+          type="checkbox"
+          checked="true"
+          onchange="App.showFields(1)"
+          name="Nombre"
+          id="Nombre"
+        />
+        Marca
+        <input
+          type="checkbox"
+          checked="true"
+          onchange="App.showFields(2)"
+          name="Apellido"
+          id="Apellido"
+        />
+        Modelo
+        <input
+          type="checkbox"
+          checked="true"
+          onchange="App.showFields(3)"
+          name="Sexo"
+          id="Sexo"
+        />
+        Precio
+      </div>
+      <div class="tabla">
+        <div class="titulo">
+          <h1>Lista de Personas</h1>
+        </div>
+        <table id="table" class="table">
+          <thead>
+            <tr>
+              <th id="IdField">Id</th>
+              <th id="NombreField">Marca</th>
+              <th id="ApellidoField">Modelo</th>
+              <th id="SexoField">Precio</th>
+              <th id="EdadField">Tipo</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <div class="abm" id="abm">
+        <div class="titulo">
+          <h1>ABM Personas</h1>
+        </div>
+        <div class="inpts">
+          <label for="IdCliente">Id: </label>
+          <input type="text" name="IdCliente" id="IdCliente" disabled />
+          <label for="NombreCliente">Marca: </label>
+          <input type="text" name="NombreCliente" id="NombreCliente" />
+          <label for="ApellidoCliente">Modelo: </label>
+          <input type="text" name="ApellidoCliente" id="ApellidoCliente" />
+          <label for="EdadCliente">Precio: </label>
+          <input type="number" name="EdadCliente" id="EdadCliente" />
+          <label for="SexoCliente">Tipo: </label>
+          <select name="SexoCliente" id="SexoCliente">
+            <option value="Camioneta">Camioneta</option>
+            <option value="Auto">Auto</option>
+          </select>
+        </div>
+        <div class="btnsABM">
+          <div class="derecha">
+            <button class="Add" id="Add">Agregar</button>
+            <button class="Clean" id="Clean">Cerrar</button>
+        </div>
+        <div class="izquierda">
+              <button class="Delete" id="Delete">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/js.js"></script>
+  </body>
+</html>
